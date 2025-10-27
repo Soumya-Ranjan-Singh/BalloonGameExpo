@@ -47,7 +47,7 @@ export const BalloonItemIOS: React.FC<BalloonProps> = ({
       Animated.sequence([
         Animated.timing(translateY, {
           toValue: -100,
-          duration: 5000,
+          duration: 8000,
           delay,
           useNativeDriver: true,
         }),
@@ -63,13 +63,13 @@ export const BalloonItemIOS: React.FC<BalloonProps> = ({
       Animated.sequence([
         Animated.timing(translateX, {
           toValue: startX + 40,
-          duration: 2500,
+          duration: 4000,
           delay,
           useNativeDriver: true,
         }),
         Animated.timing(translateX, {
           toValue: startX - 40,
-          duration: 2500,
+          duration: 4000,
           useNativeDriver: true,
         }),
       ])
